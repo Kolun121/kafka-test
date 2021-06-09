@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Consumer</title>
+</head>
+<body>
+<div th:each="record : ${records}">
+    <span>Record Key - [[${record.recordKey}]]</span>
+    <span>Record person name - [[${record.recordValue.name}]]</span>
+    <span>Record person surname - [[${record.recordValue.surname}]]</span>
+    <span>Record person age - [[${record.recordValue.age}]]</span>
+    <span>Record partition - [[${record.recordPartition}]]</span>
+    <span>Record offset - [[${record.recordOffset}]]</span>
+</div>
+</body>
+</html>
